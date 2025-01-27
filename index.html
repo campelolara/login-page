@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./estilos/style.css">
+</head>
+<body>
+    <div class="corpo">
+        <header class="cabeca">
+            <img class="outras-telas" src="./imagens/logo-ecotech.png" alt="Logo Ecotech">
+            
+            <img class="celular" src="./imagens/logo-ecotech3.png" alt="Logo Ecotech">
+            <span>EcoTech</span>
+        </header>
+
+            <div class="tela">
+                <main>
+                    <header class="cabeca-cadastro">
+                        <h1>Boas-vindas de volta!</h1>
+                        <p>Estamos muito animados em te ver novamente!</p>
+                    </header>
+                    <section class="cadastro">
+
+                        <form action="cadastro.php" method="POST" autocomplete="on">
+                            <div class="login">
+                                <label for="iemail">E-mail <span class="asteristico">*</span></label>
+                                <input type="email" name="email" id="iemail" required minlength="8" maxlength="30">
+                            </div>
+                            <div class="login">
+                                <label for="isenha">Senha <span class="asteristico">*</span></label>
+                                <input type="password" name="senha" id="isenha" required minlength="8" maxlength="20">
+                            </div>
+
+                            <section class="esqueceu-senha">
+                                <p><a href="#">Esqueceu sua senha?</a></p>
+                            </section>
+
+                            <section class="entrar">
+                                    <input type="submit" value="Enviar">
+                                <span>Precisando de uma conta? <a href="#">Registre-se</a></span>
+                            </section>
+
+                        </form>
+                    </section>
+                </main>
+                <section class="qr-code">
+                    <img src="imagens/qr-code_16949304.png" alt="Qr Code">
+                    <span>Entrar com código QR</span>
+                    <p>Escaneie isto com o <a href="#">app móvel da EcoTech</a> para fazer login imediatamente</p>
+                    <p><a href="#">Ou, faça login com a senha</a></p>
+                </section>
+            </div>
+
+    </div>
+</body>
+</html>
